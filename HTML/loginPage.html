@@ -4,21 +4,39 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Página de Login</title>
+        <script src="/JavaScript/scriptLogin.js" defer></script>
+        <title>Login - Buenos Nachos</title>
     </head>
     <body>
         <main>
-            <div>
+
+            <section>
                 <h1>Login</h1>  <!-- Trocar para o nome do restaurante -->
                 <form>
-                    <input type="text" id="nomeLogin" placeholder="Login">
-                    <span></span>  <!-- Bordas de sustentação da escrita -->
-                    <input type="password" id="senhaLogin" placeholder="Senha">
-                    <span></span>  <!-- Bordas de sustentação da escrita -->
-                    <button>Entrar</button>  <!-- tentar usar a ideia de linhas nas bordas -->
-                    <a href="Exibir-Mensagem">Esqueceu a senha? Clique aqui!</a>
+                    <input class="caixaEscrita" type="text" id="emailLogin" placeholder="Login">
+                    <span class="barraSustentação"></span>  <!-- Bordas de sustentação da escrita -->
+                    <input class="caixaEscrita" type="password" id="senhaLogin" placeholder="Senha">
+                    <span class="barraSustentação"></span>  <!-- Bordas de sustentação da escrita -->
+                    <div>
+                        <a href="#" id="buttonEntrar" onclick="return validarCampos()">
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            Entrar
+                        </a>
+                    </div>
+                    <button class="botao_recuperarSenha" id="abrirPopUp">Esqueceu a senha? Clique aqui!</button>
                 </form>
-            </div>
+            </section>
+
+            <section id="pop_up" class="popUp-container">
+                <div class="popUp">
+                    <button class="botaofechar" id="fecharPopUp">&times;</button>
+                    <h2>Olá! Para recuperar a senha, entre em contato com o restaurante.</h2>
+                    <a class="linkContatos" href="https://www.youtube.com/">Página de contatos</a>
+                </div>
+            </section>
 
         </main>
     </body>
