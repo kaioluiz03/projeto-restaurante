@@ -20,7 +20,7 @@ var validarCampos = () => {
         }    
         else{
             alertify.success('Seja bem vinde ao Restaurante Buenos Nachos!'); alertify.alert('Agora você esta logado em sua conta!').set({onshow:null, onclose:function(){
-                    window.location.href = 'popUp.html';
+                    window.location.href = '/index.html'
                 }
             });
         }    
