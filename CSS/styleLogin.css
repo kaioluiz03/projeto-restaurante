@@ -17,11 +17,11 @@ main {
     /* filter: blur(5px); */
 }
 section {
-    width: 250px;
-    height: 25rem;
+    width: 350px;
+    height: 30rem;
     border-radius: 30px;
-    box-shadow: 10px 10px 10px black;
-    background-color: goldenrod;
+    box-shadow: 10px 10px 10px #5e1823;
+    background-color: rgb(197, 152, 37);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -30,24 +30,31 @@ section {
 form {
     padding-left: 15px;
     padding-right: 15px;
-    height: 10rem;
+    height: 15rem;
     display: flex;
     flex-direction: column;
     justify-content:space-between;
     align-items: center;
 }
+.imagemLogo{
+    width: 300px;
+    padding-right: 10px;
+}
 /* FIM - CONTAINERS */ /* COMEÇO DO CSS ELEMENTOS DO FORM */
 .caixaEscrita {
     border: unset;
     outline: none;
-    background-color: goldenrod;
+    width: 200px;
+    background-color: rgb(197, 152, 37);
     color: #5e1823;
+    /* padding: 10px;
+    padding-bottom: 0px; */
 }
 .caixaEscrita::placeholder{
     color: #006847;
 }
 .recuperarSenha {
-    background-color: goldenrod;
+    background-color: rgb(197, 152, 37);
     color: #006847;
     padding: 1rem;
     cursor: pointer;
@@ -97,14 +104,13 @@ form {
 .linkContatos {
     color: goldenrod;
 }
-.linkContatos:active, .botaofechar:active, .recuperarSenha:active {
+.linkContatos:active, .botaofechar:active, .recuperarSenha:active, #buttonEntrar:active {
     color: black;
 }
 /* FIM - POP-UP DIV */ /* COMEÇO DO CSS ANIMAÇÃO BOTÃO-ENTER */
 #buttonEntrar {
     position: relative;
     display: inline-block;
-    padding: 15px, 30px;
     text-decoration: none;
     color: #006847;
     text-transform: uppercase;
@@ -113,9 +119,10 @@ form {
     text-decoration: none;
     overflow: hidden;
     transition: 0.2s;
-    padding: 3px 10px;
+    padding: 5px 15px;
     background:none;
     border: none;
+    cursor: pointer;
 }
 #buttonEntrar span {
     position: absolute;
@@ -168,4 +175,21 @@ form {
     transition: 1s;
     transition-delay: 0.75s;
 }
-/* FIM - ANIMAÇÃO BOTÃO-ENTER */
+/* FIM - ANIMAÇÃO BOTÃO-ENTER */ 
+/*  */
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    height: 2rem;
+    background-color: #006847;
+    box-shadow: 0 -10px 10px rgba(94,24,35,0.5);
+}
+
+@media (max-width: 600px) {
+.rodape {
+    height: 12vh;
+}
+}
