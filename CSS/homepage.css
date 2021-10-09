@@ -63,17 +63,17 @@ li{
     padding: 10px;
 }
 
-.listaNavegacaoDesktop{
+#listaNavegacaoDesktop{
     list-style-type: none;
     display: flex;
 }
 
-.listaNavegacaoDesktop li{
+#listaNavegacaoDesktop li{
     padding-right: 0.8rem;
     letter-spacing: 2px;
 }
 
-.navOff{
+#listaNavegacaoMobile{
     display: none;
 }
 
@@ -119,11 +119,15 @@ p{
         display: none;
     }
 
+    li{
+        display: none;
+    }
+
     #abrirMenu{
         display: block;
     }
 
-    .listaNavegacaoMobile{
+    #listaNavegacaoMobile{
         position: absolute;
         top: 23vh;
         right: 0;
@@ -136,7 +140,7 @@ p{
         padding-left: 10px;
     }
 
-    .listaNavegacaoMobile li{
+    #listaNavegacaoMobile li{
         margin-left: 0;
     }
 
