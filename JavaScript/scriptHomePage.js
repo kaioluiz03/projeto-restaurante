@@ -10,15 +10,15 @@ redirecionarHome.addEventListener("click", (e) => {
     }
 });
 
-const redirecionarLogin = document.getElementById('login');
-redirecionarLogin.addEventListener("click", (e) => {
-    if(redirecionarLogin.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/loginPage.html"){
-        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/loginPage.html";
-    }else{
-        alert('A tela não foi encontrada. Entre em contato com o restaurante.');
-        e.preventDefault();
-    }
-});
+const redirecionarLogin = document.getElementById("login")
+        redirecionarLogin.addEventListener("click", (e) => {
+            if(redirecionarLogin.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/loginPage.html"){
+                window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/loginPage.html";
+            }else{
+                alert('A tela não foi encontrada. Entre em contato com o restaurante.')
+                e.preventDefault();
+            }
+        });
 
 const redirecionarCardapio = document.getElementById('cardapio');
 redirecionarCardapio.addEventListener("click", (e) => {
@@ -62,37 +62,74 @@ redirecionarContatos.addEventListener("click", (e) => {
 
 /* Script Home page Mobile*/
 
-// const verificarMenu = document.getElementById('listaNavegacaoMobile');
-// const abrirBarraMenu = document.getElementById('abrirMenu');
-// var lista = document.getElementsByName('')
-
-// abrirBarraMenu.addEventListener('click', () => {
-//     verificarMenu.classList.remove('.navOff')
-//     if(verificarMenu.style.display = "none" === true){
-//         verificarMenu.style.display = "flex"
-//     }else if(verificarMenu.style.display = "flex"){
-//         verificarMenu.style.display = "none"
-//     }
-    
-// });
 
 const verificarMenu = document.getElementById('listaNavegacaoMobile');
 const abrirBarraMenu = document.getElementById('abrirMenu');
 
 abrirBarraMenu.addEventListener('click', () => {
-    if(verificarMenu.style.display = 'flex'){
+    if(verificarMenu.style.display == 'flex'){
         verificarMenu.style.display = 'none'
     }else{
-        return
-    }
-});
-
-abrirBarraMenu.addEventListener('click', () => {
-    if(verificarMenu.style.display = 'none'){
         verificarMenu.style.display = 'flex'
-    }else{
-        return
     }
 });
 
+const redirecionarHomeMobile = document.getElementById('homeMobile');
+redirecionarHomeMobile.addEventListener("click", (e) => {
+    if(redirecionarHomeMobile.href == "http://127.0.0.1:5500/projeto-restaurante/index.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/index.html";
+    }else{
+        alert('A tela não foi encontrada. Entre em contato com o restaurante.');
+        e.preventDefault();
+    }
+});
 
+const redirecionarLoginMobile = document.getElementById("loginMobile")
+        redirecionarLoginMobile.addEventListener("click", (e) => {
+            if(redirecionarLoginMobile.href == "http://127.0.0.1:5500/projeto-restaurante/HTML/loginPage.html"){
+                window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/loginPage.html";
+            }else{
+                alert("Error")
+                e.preventDefault();
+            }
+        });
+
+const redirecionarCardapioMobile = document.getElementById('cardapioMobile');
+redirecionarCardapioMobile.addEventListener("click", (e) => {
+    if(redirecionarCardapioMobile.href === ""){
+        window.location.href = "";
+    }else{
+        alert('A tela não foi encontrada. Entre em contato com o restaurante.');
+        e.preventDefault();
+    }
+});
+
+const redirecionarPratosMobile = document.getElementById('pratosMobile');
+redirecionarPratosMobile.addEventListener("click", (e) => {
+    if(redirecionarPratosMobile.href === ""){
+        window.location.href = "";
+    }else{
+        alert('A tela não foi encontrada. Entre em contato com o restaurante.');
+        e.preventDefault();
+    }
+});
+
+const redirecionarReservasMobile = document.getElementById('reservasMobile');
+redirecionarReservasMobile.addEventListener("click", (e) => {
+    if(redirecionarReservasMobile.href === ""){
+        window.location.href = "";
+    }else{
+        alert('A tela não foi encontrada. Entre em contato com o restaurante.');
+        e.preventDefault();
+    }
+});
+
+const redirecionarContatosMobile = document.getElementById('contatosMobile');
+redirecionarContatosMobile.addEventListener("click", (e) => {
+    if(redirecionarContatosMobile.href === ""){
+        window.location.href = "";
+    }else{
+        alert('A tela não foi encontrada. Entre em contato com o restaurante.');
+        e.preventDefault();
+    }
+});
