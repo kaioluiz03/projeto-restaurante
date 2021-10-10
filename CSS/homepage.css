@@ -11,7 +11,6 @@
 body{
     width: 100vw;
     height: 100vh;
-    overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
     background-image: url(https://static.wixstatic.com/media/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.jpg/v1/fill/w_980,h_842,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.webp); 
@@ -25,22 +24,13 @@ header{
     background: rgb(197, 152, 37);
     width: 100%;
     height: 21vh;
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.76);
+    box-shadow: 8px 8px 8px rgba(5, 5, 5, 0.637);
     flex-wrap: wrap;
 }
 
 img{
     width: 320px;
     height: 110px;
-    padding: 0;
-    margin: 0;
-}
-
-nav{
-    display: flex;
-    align-items: flex-end;
-    height: 32px;
-    margin-left: 10px;
 }
 
 #abrirMenu{
@@ -52,15 +42,16 @@ nav{
     width: 28px;
     height: 2px;
     background-color: #fff;
-    margin: 6px;
+    margin: 0.4rem;
 }
 
 a:hover{
     color: #5e1823;
+    transition: 1s;
 }
 
 li{
-    padding: 10px;
+    padding: 0.6rem;
 }
 
 #listaNavegacaoDesktop{
@@ -70,7 +61,7 @@ li{
 
 #listaNavegacaoDesktop li{
     padding-right: 0.8rem;
-    letter-spacing: 2px;
+    letter-spacing: 0.125rem;
 }
 
 #listaNavegacaoMobile{
@@ -80,7 +71,7 @@ li{
 a{
     color: #fff;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 1rem;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -92,15 +83,23 @@ footer{
     bottom: 0;
     width: 100vw;
     height: auto;
-    box-shadow: 0px -8px 8px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px -8px 8px 0px rgba(5, 5, 5, 0.637);
     background: rgb(197, 152, 37);
 }
 
 
-p{
+.copyright{
+    font-family: 'Lora', serif;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.midias p{
+    padding: none;
     font-family: 'Lora', serif;;
     color: #fff;
-    padding: 15px;
+    text-align: justify;
+    line-height: 1.5rem;
 }
 
 @media (max-width: 680px) {
@@ -111,15 +110,11 @@ p{
         height: 100px;
     }
 
-    nav{
-        background-size: 270px;
-    }
-
     .navOn{
         display: none;
     }
 
-    li{
+    #listaNavegacaoDesktop li{
         display: none;
     }
 
@@ -132,16 +127,13 @@ p{
         top: 23vh;
         right: 0;
         width: 45vw;
-        height: 63vh;
+        height: 60vh;
         background: rgb(197, 152, 37);;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
         padding-left: 10px;
-    }
-
-    #listaNavegacaoMobile li{
-        margin-left: 0;
+        box-shadow: -8px 8px 8px rgba(5, 5, 5, 0.637);
     }
 
     footer{
@@ -151,9 +143,24 @@ p{
 
     p{
         text-align: center;
-        padding: 3px;
+        padding: 0.2rem;
         font-family: 'Lora', serif;
         color: #fff;
     }
 
+}
+
+@media (max-width: 338px) {
+    #listaNavegacaoMobile{
+        position: absolute;
+        top: 23vh;
+        right: 0;
+        width: 100%;
+        height: 55vh;
+        background: rgb(197, 152, 37);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: -8px 8px 8px rgba(5, 5, 5, 0.637);
+    }
 }
