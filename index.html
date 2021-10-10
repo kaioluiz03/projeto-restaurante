@@ -6,32 +6,31 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Buenos Nachos - Homepage</title>
         <link rel="stylesheet" href="CSS/homepage.css">
-        <script src="/JavaScript/scriptHomePage.js" defer></script>
-    </head>
+        <script src="JavaScript/scriptHomePage.js" defer></script>
     <body>
         <header>
                 <img src="Images/logo.png" alt="Logo do Restaurante">
-            <nav id="navBar">
+            <nav>
                 <div id="abrirMenu">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                <ul class="listaNavegacaoDesktop navOn">
-                    <li><a class="home" onclick="abrirHome()" href="">Home</a></li>
-                    <li><a class="login" href="">Login</a></li>
-                    <li><a class="cardapio" href="">Cardápio</a></li>
-                    <li><a class="Pratos" href="">Pratos Populares</a></li>
-                    <li><a class="reservas" href="">Reservas</a></li>
-                    <li><a class="contatos" href="">Contatos</a></li>
+                <ul id="listaNavegacaoDesktop" class="navOn">
+                    <li><a id="home" href="index.html">Home</a></li>
+                    <li><a id="login" href="HTML/loginPage.html">Login</a></li>
+                    <li><a id="cardapio" href="">Cardápio</a></li>
+                    <li><a id="pratos" href="">Pratos Populares</a></li>
+                    <li><a id="reservas" href="">Reservas</a></li>
+                    <li><a id="contatos" href="">Contatos</a></li>
                 </ul>
-                <ul class="listaNavegacaoMobile navOff">
-                    <li><a class="home" href="">Home</a></li>
-                    <li><a class="login" href="">Login</a></li>
-                    <li><a class="cardapio" href="">Cardápio</a></li>
-                    <li><a class="Pratos" href="">Pratos Populares</a></li>
-                    <li><a class="reservas" href="">Reservas</a></li>
-                    <li><a class="contatos"href="">Contatos</a></li>
+                <ul id="listaNavegacaoMobile">
+                    <li><a id="homeMobile" href="index.html">Home</a></li>
+                    <li><a id="loginMobile" href="HTML/loginPage.html">Login</a></li>
+                    <li><a id="cardapioMobile" href="">Cardápio</a></li>
+                    <li><a id="pratosMobile" href="">Pratos Populares</a></li>
+                    <li><a id="reservasMobile" href="">Reservas</a></li>
+                    <li><a id="contatosMobile"href="">Contatos</a></li>
                 </ul>
             </nav>
         </header>
@@ -39,7 +38,10 @@
         </main>
         <footer>
             <p class="copyright">© 2021 Desenvolvido por Inara Oliveira</p>
-            <p class="endereco">Rua não sei das quantas, 100 - Recife/PE. Tel: (81) 3333-3333</p>
+            <div class="midias">
+                <p>Linkedin - @inara-oliveira</p>
+                <p>Github - @inaraoliveira</p>
+            </div>
         </footer>
     </body>
 </html>
