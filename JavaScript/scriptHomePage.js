@@ -32,8 +32,8 @@ redirecionarCardapio.addEventListener("click", (e) => {
 
 const redirecionarPratos = document.getElementById('pratos');
 redirecionarPratos.addEventListener("click", (e) => {
-    if(redirecionarPratos.href === ""){
-        window.location.href = "";
+    if(redirecionarPratos.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
@@ -127,8 +127,8 @@ redirecionarCardapioMobile.addEventListener("click", (e) => {
 
 const redirecionarPratosMobile = document.getElementById('pratosMobile');
 redirecionarPratosMobile.addEventListener("click", (e) => {
-    if(redirecionarPratosMobile.href === ""){
-        window.location.href = "";
+    if(redirecionarPratosMobile.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
