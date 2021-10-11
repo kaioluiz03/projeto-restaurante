@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "..\\node_modules"
+		},
+		{
+			"path": "..\\CSS"
+		},
+		{
+			"path": "..\\HTML"
+		},
+		{
+			"path": "..\\Images"
+		}
+	]
+}

@@ -32,8 +32,8 @@ redirecionarCardapio.addEventListener("click", (e) => {
 
 const redirecionarPratos = document.getElementById('pratos');
 redirecionarPratos.addEventListener("click", (e) => {
-    if(redirecionarPratos.href === ""){
-        window.location.href = "";
+    if(redirecionarPratos.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
@@ -42,8 +42,8 @@ redirecionarPratos.addEventListener("click", (e) => {
 
 const redirecionarReservas = document.getElementById('reservas');
 redirecionarReservas.addEventListener("click", (e) => {
-    if(redirecionarReservas.href === ""){
-        window.location.href = "";
+    if(redirecionarReservas.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/telaAgendamento.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/telaAgendamento.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
@@ -52,11 +52,32 @@ redirecionarReservas.addEventListener("click", (e) => {
 
 const redirecionarContatos = document.getElementById('contatos');
 redirecionarContatos.addEventListener("click", (e) => {
-    if(redirecionarContatos.href === ""){
-        window.location.href = "";
+    if(redirecionarContatos.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/tela_contato.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/tela_contato.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
+    }
+});
+
+const boasVindas = document.getElementById('bem-vindo');
+const abrirTexto = document.getElementById('texto');
+
+boasVindas.addEventListener('click', () => {
+    if(abrirTexto.style.display == 'none'){
+        boasVindas.style.display  = 'none';
+        abrirTexto.style.display = 'flex';
+    }
+    else{
+            boasVindas.style.display = 'flex';
+            abrirTexto.style.display = 'none';
+    }
+});
+
+abrirTexto.addEventListener('click',() =>{
+    if(boasVindas.style.display == 'none'){
+        abrirTexto.style.display = 'none';
+        boasVindas.style.display = 'flex';
     }
 });
 
@@ -68,9 +89,9 @@ const abrirBarraMenu = document.getElementById('abrirMenu');
 
 abrirBarraMenu.addEventListener('click', () => {
     if(verificarMenu.style.display == 'flex'){
-        verificarMenu.style.display = 'none'
+        verificarMenu.style.display = 'none';
     }else{
-        verificarMenu.style.display = 'flex'
+        verificarMenu.style.display = 'flex';
     }
 });
 
@@ -106,8 +127,8 @@ redirecionarCardapioMobile.addEventListener("click", (e) => {
 
 const redirecionarPratosMobile = document.getElementById('pratosMobile');
 redirecionarPratosMobile.addEventListener("click", (e) => {
-    if(redirecionarPratosMobile.href === ""){
-        window.location.href = "";
+    if(redirecionarPratosMobile.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/pratosPopulares.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
@@ -116,8 +137,8 @@ redirecionarPratosMobile.addEventListener("click", (e) => {
 
 const redirecionarReservasMobile = document.getElementById('reservasMobile');
 redirecionarReservasMobile.addEventListener("click", (e) => {
-    if(redirecionarReservasMobile.href === ""){
-        window.location.href = "";
+    if(redirecionarReservasMobile.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/telaAgendamento.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/telaAgendamento.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
@@ -126,8 +147,8 @@ redirecionarReservasMobile.addEventListener("click", (e) => {
 
 const redirecionarContatosMobile = document.getElementById('contatosMobile');
 redirecionarContatosMobile.addEventListener("click", (e) => {
-    if(redirecionarContatosMobile.href === ""){
-        window.location.href = "";
+    if(redirecionarContatosMobile.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/tela_contato.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/tela_contato.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();

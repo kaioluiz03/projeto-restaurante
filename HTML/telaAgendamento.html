@@ -1,57 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="telaAgendamento.css">
-    <script src="telaAgendamento.js"> </script>
-    <title>Document</title>
-</head>
-<body>
-    <main class="container">
-        <div class="box1">
-            <form action="">
-                <div>
-                    <img src="/img/logo.png" alt="" class="logo">
-                </div>
-                <div class="reservar">
-                    <div><h1>Reservar uma mesa</h1></div>
-                    <div class="data">
-                        <input type="date" name="data" id="sata">
-                    </div>
-                    <div class="hora">
-                        <input type="time" name="hora" id="hora" placeholder="Data:">
-                    </div>
-                    <div class="pessoas">
-                        <input type="number" name="pessoas" id="pessoas" placeholder="Pessoas:">
-                    </div>
-                </div>
-                <div class="cantatosPrincipal">
-                    <div class="contato_principal">
-                        <h2>Contato principal</h2>
-                    </div>
-                    <div class="nome">
-                        <input type="text" name="nome" id="nome" placeholder="Nome:">
-                    </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../CSS/telaAgendamento.css">
+        <script src="../node_modules/alertifyjs/build/alertify.min.js" defer></script>
+        <link rel="stylesheet" href="../node_modules/alertifyjs/build/css/alertify.min.css"/>
+        <link rel="stylesheet" href="../node_modules/alertifyjs/build/css/themes/default.min.css" />
+        <link rel="shortcut icon" href="../Images/img/chili.ico" type="image/x-icon">
+        <script src="../JavaScript/telaAgendamento.js"> </script>
+        <title>Reserva - Buenos Nachos</title>
+    </head>
+    <body>
+        <main class="container">
+            <div class="box1">
+                <form action="">
                     <div>
-                        <input type="email" name="email" id="" placeholder="E-mail">
+                        <a href="../index.html"><img src="../Images/logo.png" alt="" class="logo"></a>
                     </div>
-                    <section id="botoes">
-                        <div class="botao_confirmar">
-                            <input type="submit" value="confirmar" id="confirmar">
+                    <div class="reservar">
+                        <div><h1>Reservar uma mesa</h1></div>
+                        <div class="data">
+                            <input type="date" name="data" id="data">
                         </div>
-                        <div class="botao_cancelar">
-                            <input type="submit" value="cancelar" id="cancelar">
+                        <div class="hora">
+                            <input type="time" name="hora" id="hora" placeholder="Data:">
                         </div>
-                    </section>
-                </div>
-            </form>
-        </div>
-        <footer class="footer">
-            <h2>Feito por - <a href="https://github.com/Manelxd" target="_blank" rel="noopener noreferrer">Isaac Emanuel Da Silva</a></h2>
-        </footer>
-
-    </main>
-</body>
+                        <div class="pessoas">
+                            <input type="number" name="pessoas" id="pessoas" placeholder="Pessoas:">
+                        </div>
+                    </div>
+                    <div class="cantatosPrincipal">
+                        <div class="contato_principal">
+                            <h2>Contato principal</h2>
+                        </div>
+                        <div class="nome">
+                            <input type="text" name="nome" id="nome" placeholder="Nome:">
+                        </div>
+                        <div>
+                            <input type="email" name="email" id="email" placeholder="E-mail">
+                        </div>
+                        <section id="botoes">
+                            <div class="botao_confirmar">
+                                <input type="button" onclick=" return validacao()" value="confirmar" id="Salvar">
+                            </div>
+                            <div class="botao_cancelar">
+                                <input type="button" onclick="cancelamento()" value="cancelar" id="cancelar">
+                            </div>
+                        </section>
+                    </div>
+                </form>
+            </div>
+            <footer class="footer">
+                <a href="https://codepen.io/manelxd" target="_blank" class="icons">
+                    <img class="imgCodepen" src="../Images/codepen.png" alt="">
+                </a>
+                <a href="https://github.com/Manelxd" target="_blank" class="icons">
+                    <img class="imgGithub"  src="../Images/github.png" alt="">
+                </a>
+                <a href=" https://www.linkedin.com/in/isaac-emanuel-3167a5219/" target="_blank" class="icons">
+                    <img class="imgLinkdin" src="../Images/linkedin_32.png" alt="">
+                </a>
+            </footer>
+        </main>
+    </body>
 </html>

@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200&display=swap');
+
+* {
+    margin: 0 ;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.box1 {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100vh;
+    width: 100%;
+    background-image: url('https://static.wixstatic.com/media/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.jpg/v1/fill/w_980,h_842,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.webp');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+form  {
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    text-align: center;
+    height: 80vh;
+    width: 55vh;
+    background-color: rgb(197, 152, 37);
+    line-height: 7vh;
+    box-shadow: 10px 10px 10px #5e1823;
+    
+}
+
+.logo {
+    margin-top: 2%;
+    width: 70%;
+}
+
+input {
+    width:40vh;
+    height: 5vh;
+    border-radius: 12px;
+    border-style: none;
+    text-align: center;
+    
+}
+
+.footer {
+    display: flex;
+    align-items: center; 
+    justify-content: center; 
+    background-color: rgb(197, 152, 37);
+    height: 10vh;
+    width: 100%;
+    box-shadow: 0 -10px 10px rgba(94,24,35,0.5);
+}
+
+.imgLinkdin{
+    height: 70%;
+}
+.imgGithub{
+    height: 70%;
+}
+.imgCodepen{
+    height: 70%;
+}
+.icons{
+    margin: 1%;
+}
+
+input:hover{
+    border: solid 2px#006847;
+    text-align: center;
+}
+
+#confirmar:hover{
+    background-color:#006847 ;
+    color: white;
+}
+
+#cancelar:hover{
+    border-color: #5e1823;
+    background-color: #5e1823;
+    color: white;
+}
+@media (min-width: 425px) { 
+    .imgLinkdin{
+        height: 60%;
+        margin-left: 10px;
+        margin-left: 2%;
+    }
+    .imgGithub{
+        height: 60%;
+        margin-left: 2%;
+    }
+    .imgCodepen{
+        height: 60%;
+        
+    }
+}
