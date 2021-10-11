@@ -93,6 +93,7 @@ header{
 }
 #sobremesas .fotos:hover{
   transform: scale(1.1);
+  border-radius: 10%
 }
 .fotos{
   background-color: #006847d3;
@@ -129,7 +130,7 @@ header{
   font-size: 15px;
   font-weight:bold;
   cursor: pointer;
-  font-family: 'Lora', serif;;
+  font-family: 'Lora', serif;
 }
 .fotos button:hover{
   background-color: rgb(197, 152, 37);
