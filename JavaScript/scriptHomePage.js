@@ -22,8 +22,8 @@ const redirecionarLogin = document.getElementById("login")
 
 const redirecionarCardapio = document.getElementById('cardapio');
 redirecionarCardapio.addEventListener("click", (e) => {
-    if(redirecionarCardapio.href === ""){
-        window.location.href = "";
+    if(redirecionarCardapio.href === "http://127.0.0.1:5500/projeto-restaurante/HTML/cardapio.html"){
+        window.location.href = "http://127.0.0.1:5500/projeto-restaurante/HTML/cardapio.html";
     }else{
         alert('A tela não foi encontrada. Entre em contato com o restaurante.');
         e.preventDefault();
