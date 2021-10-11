@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-
+@import url('http://fonts.cdnfonts.com/css/brittany-signature');
 
 *{
     margin: 0;
@@ -60,7 +60,7 @@ li{
 }
 
 #listaNavegacaoDesktop li{
-    padding-right: 0.8rem;
+    /* padding-right: 0.8rem; */
     letter-spacing: 0.125rem;
 }
 
@@ -90,16 +90,93 @@ footer{
 
 .copyright{
     font-family: 'Lora', serif;
+    font-size: 0.9rem;
     color: #fff;
+    padding: 0.5rem;
+}
+
+.midias{
+    display: flex;
+    align-items: flex-end;
     padding: 0.5rem;
 }
 
 .midias p{
     padding: none;
-    font-family: 'Lora', serif;;
+    font-family: 'Lora', serif;
     color: #fff;
     text-align: justify;
     line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.linkedin{
+    font-size: 0.8rem;
+    font-family: 'Lora', serif;
+}
+
+.github{
+    font-size: 0.8rem;
+    font-family: 'Lora', serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 68.5vh;
+}
+
+#bem-vindo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #fff;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0);
+}
+
+#bem-vindo:hover{
+    background-color: #fff;
+    transition:ease-in 1s;
+    cursor: pointer;
+}
+
+#bem-vindo p{
+    color: #fff;
+    font-size: 2rem;
+    padding: 50px;
+    font-family: 'Brittany Signature', sans-serif;    
+    text-shadow: 3px 3px 3px black;    
+}
+
+#bem-vindo p:hover{
+    color: #5e1823;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
+}
+
+#texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 303px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.678);
+}
+
+#texto p{
+    font-family: 'Lora', serif;
+    font-size: 0.825rem;
+    text-align: justify;
+    color: black;
+    padding: 30px;
 }
 
 @media (max-width: 680px) {
@@ -143,11 +220,13 @@ footer{
 
     p{
         text-align: center;
-        padding: 0.2rem;
         font-family: 'Lora', serif;
         color: #fff;
     }
 
+    #bem-vindo:hover{
+        display: none;        
+    }
 }
 
 @media (max-width: 338px) {
