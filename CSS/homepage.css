@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
-@import url('http://fonts.cdnfonts.com/css/brittany-signature');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Sacramento&display=swap');
 
 *{
     margin: 0;
@@ -149,7 +149,7 @@ main{
     color: #fff;
     font-size: 2rem;
     padding: 50px;
-    font-family: 'Brittany Signature', sans-serif;    
+    font-family: 'Ephesis', cursive;
     text-shadow: 3px 3px 3px black;    
 }
 
