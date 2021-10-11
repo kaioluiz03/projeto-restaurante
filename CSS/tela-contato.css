@@ -25,20 +25,20 @@
   }
   
   #for {
-    width: 73vh;
-    margin-left: auto;
+    width: 65vh;
+    height: 70%;
     margin-right: 15vh;
     background-color: rgb(197, 152, 37);
-    border-radius: 55px;
-    padding: 25px;
+    border-radius: 45px;
+    padding: 15px;
     box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.924);
-  }
-  
-  form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
+  
   }
+
   label {
     font-weight: bold;
     font-size: .8rem;
@@ -56,17 +56,12 @@
   }
   
   input[type="submit"] {
-    background-color:#5e1823;
+    background-color:#62f80b;
     color: rgba(255, 255, 255, 0.671);
     border: none;
     border-radius: 20px;
     height: 40px;
     cursor: pointer;
-  }
-
-  #agreement, #agreement-label {
-    display: inline-block;
-    width: auto;
   }
 
   .texto{
@@ -78,12 +73,16 @@
     text-align: center;
     padding-left: 0.5rem;
   }
-  .caixa{
-    border-style: ridge;
-  }
+ 
   footer{
-    background-color:rgb(197, 152, 37);
-    width:100vw ;
-    display: flex;
+    display: flex; 
+    justify-content:space-evenly;
+    align-items: center;
+    background: rgb(197, 152, 37);
+    width: 100vw;
+    padding: 15px;
+    flex: 1 1;
+    box-shadow: 0px -8px 8px 0px rgba(0,0,0,0.75);
+    font-size: 1.1em;
   }
   
