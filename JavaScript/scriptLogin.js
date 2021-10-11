@@ -26,7 +26,7 @@ var validarCampos = () => {
         }    
     }
     else {
-        alertify.error('O email está incorreto, tente novamente!');
+        alertify.error('O email está incorreto, tente novamente! Lembre-se de usar o "@" e o ".com"');
     }
 };   
 
@@ -42,10 +42,3 @@ const popUpElement = document.getElementById("pop_up");
     fechar.addEventListener("click", () => {
         pop_up.classList.remove("active")
     });
-
-
-    let test = () => {
-        document.getElementById('emailLogin').style.backgroundColor = 'goldenrod';
-        document.getElementById('emailLogin').style.color = '#5e1823';
-        // <input type=text name="valor" onFocus="document.body.style.background = '#cc0000'" onBlur="document.body.style.background = '#000000'">
-    }
