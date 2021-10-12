@@ -10,7 +10,12 @@ let validacao = ()=> {
 
     if (dataAgend.value == "" || horaAgend.value == "" || pessoasAgend.value == "" || nomeAgend.value == "" || emailAgend.value == "" ) {
         alertify.error('Por favor verifique se todos os dados foram preenchidos.'); 
-    } else{
+    } else if (pessoasAgend.value <= 0) {
+        alertify.error('Insira um numero de pessoas valido')
+    } else if (horaAgend.value > "22:00" || horaAgend.value < "18.00") {
+        alertify.error("Horario Indisponivel")
+    }
+     else{
         alertify.success('Sua Reserva foi salva, estamos te aguardando no Restaurante Start!')
     }
 
