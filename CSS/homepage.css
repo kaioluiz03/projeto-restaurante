@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ephesis&family=Sacramento&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(https://static.wixstatic.com/media/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.jpg/v1/fill/w_980,h_842,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.webp); 
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-bottom: 1rem;
+    background: rgb(197, 152, 37);
+    width: 100%;
+    height: 21vh;
+    box-shadow: 8px 8px 8px rgba(5, 5, 5, 0.637);
+    flex-wrap: wrap;
+}
+
+img{
+    width: 320px;
+    height: 110px;
+}
+
+#abrirMenu{
+   display: none;
+   cursor: pointer;
+}
+
+#abrirMenu div{
+    width: 28px;
+    height: 2px;
+    background-color: #fff;
+    margin: 0.4rem;
+}
+
+a:hover{
+    color: #5e1823;
+    transition: 1s;
+}
+
+li{
+    padding: 0.6rem;
+}
+
+#listaNavegacaoDesktop{
+    list-style-type: none;
+    display: flex;
+}
+
+#listaNavegacaoDesktop li{
+    /* padding-right: 0.8rem; */
+    letter-spacing: 0.125rem;
+}
+
+#listaNavegacaoMobile{
+    display: none;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-family: 'Raleway', sans-serif;
+}
+
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
+    height: auto;
+    box-shadow: 0px -8px 8px 0px rgba(5, 5, 5, 0.637);
+    background: rgb(197, 152, 37);
+}
+
+
+.copyright{
+    font-family: 'Lora', serif;
+    font-size: 0.9rem;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+.midias{
+    display: flex;
+    align-items: flex-end;
+    padding: 0.5rem;
+}
+
+.midias p{
+    padding: none;
+    font-family: 'Lora', serif;
+    color: #fff;
+    text-align: justify;
+    line-height: 1.5rem;
+    font-size: 0.8rem;
+}
+
+.linkedin{
+    font-size: 0.8rem;
+    font-family: 'Lora', serif;
+}
+
+.github{
+    font-size: 0.8rem;
+    font-family: 'Lora', serif;
+}
+
+main{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 68.5vh;
+}
+
+#bem-vindo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: #fff;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0);
+}
+
+#bem-vindo:hover{
+    background-color: #fff;
+    transition:ease-in 1s;
+    cursor: pointer;
+}
+
+#bem-vindo p{
+    color: #fff;
+    font-size: 2rem;
+    padding: 50px;
+    font-family: 'Ephesis', cursive;
+    text-shadow: 3px 3px 3px black;    
+}
+
+#bem-vindo p:hover{
+    color: #5e1823;
+    text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.514);
+}
+
+#texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 303px;
+    height: 230px;
+    border-radius: 10px;
+    background-color: #fff;
+    display: none;
+    cursor: pointer;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.678);
+}
+
+#texto p{
+    font-family: 'Lora', serif;
+    font-size: 0.825rem;
+    text-align: justify;
+    color: black;
+    padding: 30px;
+}
+
+@media (max-width: 680px) {
+    img{
+        margin: auto;
+        padding: 0;
+        width: 299px;
+        height: 100px;
+    }
+
+    .navOn{
+        display: none;
+    }
+
+    #listaNavegacaoDesktop li{
+        display: none;
+    }
+
+    #abrirMenu{
+        display: block;
+    }
+
+    #listaNavegacaoMobile{
+        position: absolute;
+        top: 23vh;
+        right: 0;
+        width: 45vw;
+        height: 60vh;
+        background: rgb(197, 152, 37);;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-left: 10px;
+        box-shadow: -8px 8px 8px rgba(5, 5, 5, 0.637);
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    p{
+        text-align: center;
+        font-family: 'Lora', serif;
+        color: #fff;
+    }
+
+    #bem-vindo:hover{
+        display: none;        
+    }
+}
+
+@media (max-width: 338px) {
+    #listaNavegacaoMobile{
+        position: absolute;
+        top: 23vh;
+        right: 0;
+        width: 100%;
+        height: 55vh;
+        background: rgb(197, 152, 37);
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        box-shadow: -8px 8px 8px rgba(5, 5, 5, 0.637);
+    }
+}

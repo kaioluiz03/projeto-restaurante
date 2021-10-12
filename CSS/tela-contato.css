@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    color: #323232;
+    border: none;
+  }
+  
+  input, label {
+    display: block;
+    outline: none;
+    width: 100%;
+  }
+  
+  body {
+    padding-top: 5vh;
+    background-image: url('../Images/fundo.jpeg');
+    background-size: cover;
+    background-position-y: -150px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #for {
+    width: 65vh;
+    height: 70%;
+    margin-right: 15vh;
+    background-color: rgb(197, 152, 37);
+    border-radius: 45px;
+    padding: 15px;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.924);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  
+  }
+
+  label {
+    font-weight: bold;
+    font-size: .8rem;
+  }
+  
+  input {
+    border-bottom: 2px solid #323232;
+    padding: 10px;
+    font-size: .9rem;
+    margin-bottom: 40px;
+  }
+  
+  input:focus {
+    border-color: #f83218;
+  }
+  
+  input[type="submit"] {
+    background-color:#62f80b;
+    color: rgba(255, 255, 255, 0.671);
+    border: none;
+    border-radius: 20px;
+    height: 40px;
+    cursor: pointer;
+  }
+
+  .texto{
+    font-weight: bold;
+    font-size: .8rem;
+    top: 57px;
+    font-size: 22px;
+    /* margin-right: 15px; */
+    text-align: center;
+    padding-left: 0.5rem;
+  }
+ 
+  footer{
+    display: flex; 
+    justify-content:space-evenly;
+    align-items: center;
+    background: rgb(197, 152, 37);
+    width: 100vw;
+    padding: 15px;
+    /* flex: 1 1; */
+    box-shadow: 0px -8px 8px 0px rgba(0,0,0,0.75);
+    font-size: 1.1em;
+  }
+  

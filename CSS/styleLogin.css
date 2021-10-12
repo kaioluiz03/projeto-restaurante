@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/* COMEÇO DO CSS CONTAINERS */
+main {
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url('https://static.wixstatic.com/media/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.jpg/v1/fill/w_980,h_842,al_c,q_85,usm_0.66_1.00_0.01/ea71bb_73e8260cc2ab466db7bae785fd4d5f3d.webp');
+    background-size: cover;
+    background-repeat: repeat-y;
+}
+section {
+    width: 350px;
+    height: 30rem;
+    border-radius: 30px;
+    box-shadow: 10px 10px 10px #5e1823;
+    background-color: rgb(197, 152, 37);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-evenly;
+}
+form {
+    padding-left: 15px;
+    padding-right: 15px;
+    height: 15rem;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+}
+.imagemLogo{
+    width: 300px;
+    padding-right: 10px;
+}
+/* FIM - CONTAINERS */ /* COMEÇO DO CSS ELEMENTOS DO FORM */
+.caixaEscrita {
+    border: unset;
+    outline: none;
+    width: 200px;
+    background-color: rgb(197, 152, 37);
+    color: #5e1823;
+}
+.caixaEscrita::placeholder{
+    color: #006847;
+}
+.recuperarSenha {
+    background-color: rgb(197, 152, 37);
+    color: #006847;
+    padding: 1rem;
+    cursor: pointer;
+}
+.barraSustentação {
+    height: 1px;
+    width: 80%;
+    background-color:#5e1823;
+}
+/* FIM - ELEMENTOS DO FORM */ /* COMEÇO DO CSS POP-UP DIV */
+.popUp-container {
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+.popUp-container.active {
+    display: flex;
+    padding: 50px;
+}
+.popUp {
+    color: #ffffff;
+    background-color: #006847;
+    box-shadow: 0 0 60px #006847, 0 0 60px #006847, 0 0 120px #006847;
+    padding: 2rem;
+    border-radius: 10px;
+    position: relative;
+}
+.botaofechar {
+    background-color: #006847;
+    border: none;
+    color: goldenrod;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    padding: 2px;
+    position: absolute;
+    cursor: pointer;
+    top: 1px;
+    right: 5px;
+}
+.linkContatos {
+    color: goldenrod;
+}
+.linkContatos:active, .botaofechar:active, .recuperarSenha:active, #buttonEntrar:active {
+    color: black;
+}
+/* FIM - POP-UP DIV */ /* COMEÇO DO CSS ANIMAÇÃO BOTÃO-ENTER */
+#buttonEntrar {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: #006847;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 15px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+    padding: 5px 15px;
+    background:none;
+    border: none;
+    cursor: pointer;
+}
+#buttonEntrar span {
+    position: absolute;
+    display: block;
+}
+#buttonEntrar span:nth-child(1){
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(90deg,transparent,#5e1823);
+}
+#buttonEntrar:hover span:nth-child(1){
+    left: 100%;
+    transition: 1s;
+}
+#buttonEntrar span:nth-child(3){
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 2px;
+    background:linear-gradient(270deg,transparent,#5e1823);
+}
+#buttonEntrar:hover span:nth-child(3){
+    right: 100%;
+    transition: 1s;
+    transition-delay: 0.5s;
+}
+#buttonEntrar span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(180deg,transparent,#5e1823);
+}
+#buttonEntrar:hover span:nth-child(2){
+    top: 100%;
+    transition: 1s;
+    transition-delay: 0.25s;
+}
+#buttonEntrar span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background:linear-gradient(360deg,transparent,#5e1823);
+}
+#buttonEntrar:hover span:nth-child(4){
+    bottom: 100%;
+    transition: 1s;
+    transition-delay: 0.75s;
+}
+/* FIM - ANIMAÇÃO BOTÃO-ENTER */ /* COMEÇO DO RODAPÉ */
+.rodape {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    text-align: center;
+    height: 2rem;
+    background-color: #006847;
+    color: rgb(197, 152, 37);
+    box-shadow: 0 -10px 10px rgba(94,24,35,0.5);
+}
+
+@media (max-width: 617px) {
+section {
+    box-shadow: 0px 10px 10px #5e1823;
+}
+.rodape {
+    height: 12vh;
+}
+}

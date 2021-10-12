@@ -1,12 +1,53 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Página de Login</title>
-</head>
-<body>
-    
-</body>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="../JavaScript/scriptLogin.js" defer></script>
+        <script src="../node_modules/alertifyjs/build/alertify.min.js" defer></script>
+        <link rel="stylesheet" href="../CSS/styleLogin.css">
+        <link rel="stylesheet" href="../node_modules/alertifyjs/build/css/alertify.min.css"/>
+        <link rel="stylesheet" href="../node_modules/alertifyjs/build/css/themes/default.min.css" />
+        <link rel="shortcut icon" href="../Images/img/chili.ico" type="image/x-icon">
+        <title>Login - Buenos Nachos</title>
+    </head>
+    <body>
+        <main>
+
+            <section>
+                <img class="imagemLogo" src="../Images/logo.png" alt="Logo do Restaurante">  <!-- Trocar para o nome do restaurante -->
+                <!-- <h3>Login</h3> -->
+                <form>
+                    <input class="caixaEscrita" type="email" autocomplete="off" id="emailLogin" placeholder="🌶 E-mail">
+                    <span class="barraSustentação"></span>  <!-- Bordas de sustentação da escrita -->
+                    <input class="caixaEscrita" type="password" id="senhaLogin" placeholder="🌶 Senha">
+                    <span class="barraSustentação"></span>  <!-- Bordas de sustentação da escrita -->
+                    <div>
+                        <button type="button" id="buttonEntrar" onclick="return validarCampos()">
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            <span></span>  <!-- linhas Animadas nas bordas nas bordas  -->
+                            Entrar
+                        </button>
+                    </div>
+                    <a class="recuperarSenha" id="abrirPopUp">Esqueceu a senha? Clique aqui!</a>
+                </form>
+            </section>
+
+            <section id="pop_up" class="popUp-container">
+                <div class="popUp">
+                    <button class="botaofechar" id="fecharPopUp">&times;</button>
+                    <h2>Olá! Para recuperar a senha, entre em contato com o restaurante.</h2>
+                    <a class="linkContatos" href="http://127.0.0.1:5500/projeto-restaurante/HTML/tela_contato.html">Página de contatos</a>
+                </div>
+            </section>
+
+        </main>
+        <footer class="rodape">
+            <p>© Desenvolvido por Kaio Luiz Guimarães Barreto.</p>
+            <p>Github and linkedin - @kaioluiz03</p>
+        </footer>
+    </body>
 </html>

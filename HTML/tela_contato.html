@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos - Buenos Nachos</title>
+    <link rel="stylesheet" href="../CSS/tela-contato.css">
+    <script src="../JavaScript/tela_contato.js" defer ></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="../Images/img/chili.ico" type="image/x-icon">
+	  <style>
+		.whatsapp-link {
+			position: fixed;
+			width: 60px;
+			height: 60px;
+			bottom: 40px;
+			right: 40px;
+			background-color: #25d366;
+			color: #fff;
+			border-radius: 50px;
+			text-align: center;
+			font-size: 30px;
+			box-shadow: 1px 1px 2px #888;
+			z-index: 1000;
+		}
+		.fa-whatsapp {
+			margin-top: 16px;
+		}
+	</style>
+</head>
+  <body>
+      <a class="whatsapp-link" href="https://web.whatsapp.com/send?phone=5581983249912" target="_blank">
+        <i class="fa fa-whatsapp"></i>
+      </a>
+    <div class="texto">
+        <p>
+          Entre em contato agora conosco <br>
+          para dúvidas ou reservas ou se preferir, <br>
+          preencha o formulário: <br>
+          <br>
+          Horario de funcionamento
+          Segunda a quinta: <br> 
+          das 08:00 h às 22:00 h <br>
+          Sexta a sábado: 09:00 - 23:00
+          Domingo: 10:00 - 17:00
+        </p>
+    </div>
+        <div id="for">
+               <h1>FALE COM A GENTE</h1>
+            <form>
+              <div>
+                <label for="nome">Nome</label>
+                <input type="text nome" id="nome" size="24" maxlength="30" placeholder="NOME COMPLETO" class="nome-compelto"> 
+
+              </div>
+              <div class=>
+                <label for="email">Email</label>
+                <input type="email" id="email"  size="24" maxlength="30" placeholder="EMAIL" > 
+              </div>
+              <div>
+                  <label for="telefone">Telefone</label>
+                  <input type="tel" id="telefone" size="13" minlength="12" placeholder="TELEFONE" > 
+              </div>
+              <div class="opcões">
+                <label for="Selecione" id="selecione">Selecione</label>
+                <select name=" SELECIONE...">
+                <option> SELECIONE...</option>
+                <option> Reclamações</option>
+                <option> Sobre Reservas </option>
+                <option> Pratos</option>
+                </select>
+              </div>
+            <label for="mensagem">Mensagem</label>
+            <div class="caixa">
+              <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Digite seu texto Aqui..."></textarea>
+            </div>
+            <input type="button" onclick="validar()" value="ENVIAR">
+          </form>
+        </div> 
+    <br>
+    <br>
+    <br>
+      <footer> © 2021 desenvolvido por Michele França </footer>       
+  </body>
+</html>

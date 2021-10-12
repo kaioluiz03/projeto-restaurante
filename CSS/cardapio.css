@@ -1,0 +1,227 @@
+html{
+font-family: 'Lora', serif;
+font-family:'Raleway', sans-serif;
+}
+
+body{
+  background-image: url('../Images/imgcardapio/Fundo.png');
+  background-repeat:repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+header{
+    margin-top: -20px;
+    padding: 25px 12px 10px 10px;
+    border: 0;
+    background-color: rgb(197, 152, 37);
+    color: #ffffff;
+    text-align: center;
+    font-family:'Raleway', sans-serif;
+    display: block;
+    width: 100vw;
+    height: 21vh; 
+  }
+  #logo img{
+    width: 250px;
+    margin: 0;
+    margin-top: 20px;
+    transform: scale(1);
+    transition: 0.3s ease-in-out;
+  }
+  #logo img:hover{
+    transform: scale(1.4);
+    border-radius: 10%
+  }
+  
+#paginainicial ul {
+    list-style: none;
+    
+}
+
+.cardapio{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  flex: 1 1 300px;
+} 
+
+.cardapio img{
+  transform: scale(1.1);
+  padding: 5px;
+  height: 20vh;
+  width: 150px;
+  border-radius: 50px; 
+  max-width: 100%;
+  max-height: 100%;
+  
+
+}
+
+.cardapio2{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+} 
+.cardapio2 img{
+  padding: 5px;
+  height: 20vh;
+  width: 150px;
+  border-radius: 50px;
+
+}
+#sobremesas{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#sobremesas img{
+  padding: 5px;
+  height: 20vh;
+  width: 150px;
+  border-radius: 50px; 
+  max-width: 100%;
+  max-height: 100%;
+}
+#sobremesas .fotos{
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+#sobremesas .fotos:hover{
+  transform: scale(1.1);
+  border-radius: 10%
+}
+.fotos{
+  background-color: #006847d3;
+  color: white;
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px;
+  width: 350px;
+  text-align: justify;
+  font-size: 12px;
+  font-family: 'Lora', serif;
+}
+.cardapio .fotos{
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.cardapio .fotos:hover{
+  transform: scale(1.1);
+}
+.cardapio2 .fotos{
+  transform: scale(1);
+  transition: 0.3s ease-in-out;
+}
+.cardapio2 .fotos:hover{
+  transform: scale(1.1);
+}
+.fotos button{
+  display: block;
+  width: 350px;
+  background-color: #bd142dd0;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  font-size: 15px;
+  font-weight:bold;
+  cursor: pointer;
+  font-family: 'Lora', serif;
+}
+.fotos button:hover{
+  background-color: rgb(197, 152, 37);
+  color:#006847d0;
+  font-family: 'Lora', serif;
+  
+}
+#cabeçalho header{
+  display: flex;
+  left: 10vw; 
+}
+#cabeçalho header img{
+  width: 320px;
+  height: 110px;
+}
+#logo-cardapio{
+  background-color: #006847d0;
+  border-radius: 1000px;
+  width: 330px;
+  height: auto;
+  margin-top: 30px;
+  text-align: center;
+  
+  
+}
+#logo-cardapio img {
+  width: 310px;
+  height: auto;
+}
+
+#imgsobremesa{
+  background-color:#8d2333be;
+  border-radius: 1000px;
+  width: 330px;
+  height: auto;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  
+}
+#imgsobremesa img{
+  width: 330px;
+  height: auto; 
+}
+#imgbebidas{
+  background-color:#8d2333be;
+  border-radius: 1000px;
+  width: 330px;
+  height: auto;
+  margin-top: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+#imgbebidas img{
+  width: 330px;
+  height: auto;
+}
+
+#bebidas{
+  color: white;
+  background-color:#006847d0;
+  border-radius: 10px;
+  font-family: 'Lora', serif;
+  display: flex;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+  padding: 0;
+}
+#bebidas2{
+  width: 1000px;
+}
+
+#nomebebida{
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer{
+  background-color: rgb(197, 152, 37);
+  color: #ffffff;
+  text-align: center;
+  font-family: 'Lora', serif;
+  width: 100vw;
+  height: auto;
+}
+
+  
